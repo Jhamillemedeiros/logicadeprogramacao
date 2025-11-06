@@ -10,7 +10,7 @@ public class Pessoa {
 
     // método
     public void exibirDados() {
-        System.out.println("\nDADOS DO USUÁRIO:\n ");
+        System.out.println("\n DADOS DO USUÁRIO:\n ");
         System.out.println("Nome: " + this.nome);
         System.out.println("CPF: " + this.cpf);
         System.out.println("E-mail: " + this.email);
