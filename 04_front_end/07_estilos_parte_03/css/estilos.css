@@ -1,0 +1,80 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210729/pngtree-three-color-overlay-brazil-flag-background-image_753831.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+
+main{
+    margin: 30px 100px;
+}
+form {
+    margin: 50px 15px;
+}
+
+label, button{
+    display:block;
+}
+
+label{
+    
+    margin: 5px 0px;
+    color: rgb(244, 250, 255);
+}
+
+button{
+    margin: 50px 0px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    width: 200px;
+    border-radius: 10px;
+    background-color:#096b09;
+    color:#ffffff
+}
+
+button:hover {
+background-color: #ffffff;
+color:#007700;
+transition: 0.5s ease;
+}
+
+
+input {
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #007700;
+}
+
+input:focus, select:focus{
+    border-bottom: 2px solid #d60707;
+    transition: 0.5s ease;
+
+}
+
+select{
+    background-color: #ffffff;
+}
+
+h1{
+    color:#f0f3f0;
+    text-shadow: 1px 1px 1px #0a0a2c;
+    
+}
+.nome {
+    width: 500px;
+}
+.data-nascimento{
+    width: 200px;
+}
+
+.altura{
+    width: 75px;
+}
+
+.genero{
+    width: 250px;
+}
