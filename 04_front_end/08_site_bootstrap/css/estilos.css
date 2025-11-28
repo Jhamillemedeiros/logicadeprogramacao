@@ -1,11 +1,21 @@
-
-.meu-logo{
+.meu-logo {
     width: 46px;
     margin: -5px 0px;
 }
 
-.sombra-navbar{
-    background: linear-gradient(to right, #f34a4a,#fcbb44, #000000);
-    box-shadow:  0px 5px 20px #000000;
+.sombra-navbar {
+    background: linear-gradient(to right, #f34a4a, #fcbb44, #000000);
+    box-shadow: 0px 5px 20px #000000;
     border-bottom: 1px solid #031926;
+}
+
+
+.label-carousel {
+    text-shadow: 1px 1px 1px #000000;
+    background-color: #000000;
+    opacity: 0.7;
+}
+
+.sombra-carousel {
+    box-shadow: 0px 10px 20px #16161d;
 }
