@@ -1,0 +1,47 @@
+.meu-logo {
+    width: 46px;
+    margin: -5px 0px;
+}
+
+.sombra-navbar {
+    background: linear-gradient(to right, #e90db9, #0d0901, #f000cc);
+    box-shadow: 0px 5px 20px #000000;
+    border-bottom: 1px solid #031926;
+}
+
+
+
+
+.sombra-carousel {
+    box-shadow: 0px 10px 20px #941485;
+}
+body{
+    background-color: rgb(238, 212, 224);
+
+}
+
+.img-fix {
+   
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+
+}
+
+.nome {
+    text-align: center;
+}
+
+
+.btn-toggle {
+    background-color: #d7b3ff; /* lilás */
+    width: 100%;
+    text-align: left;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+
+
