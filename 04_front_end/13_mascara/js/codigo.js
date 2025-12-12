@@ -1,4 +1,9 @@
 const form = document.querySelector('form');
+const cpfMask = document.querySelector('#cpf');
+const telefoneMask = document.querySelector('#telefone');
+const cepMask = document.querySelector('#cep');
+
+
 
 const exibirInfo = () => {
     let nome = document.querySelector('#nome').value;
@@ -17,7 +22,44 @@ const exibirInfo = () => {
     document.querySelector("#telefoneResult").innerHTML = `<b>Telefone:</b> ${telefone}`;
     document.querySelector("#cepResult").innerHTML = `<b>CEP:</b> ${cep}`;
     document.querySelector("#enderecoResult").innerHTML = `<b>Endereço:</b> ${endereco}`;
+
+    // apaga os dados de todo o formulário
+    form.reset();
 }
+cpfMask.addEventListener('input', function () {
+    this.value = this.value
+        .replace(/\D/g, '')
+        .replace(/(\d{3})(\d)/, '$1.$2')
+        .replace(/(\d{3})(\d)/, '$1.$2')
+        .replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+});
+
+
+
+telefoneMask.addEventListener('input', function () {
+    this.value = this.value
+        .replace(/\D/g, '')
+        .replace(/(\d{2})(\d)/, '($1) $2')
+        .replace(/(\d{4,5})(\d)/,  "$1-$2")
+        .replace(/(-\d{4})\d+?$/, '$1');
+
+
+});
+
+CepMask.addEventListener('input', function () {
+    this.value = this.value
+        .replace(/\D/g, '')
+        .replace(/(\d{5})(\d)/, '$1-$2')
+        .replace(/(-\d{3})\d+?$/, '$1');
+
+
+});
+
+
+
+
+
+
 
 form.addEventListener('submit', function (event) {
     event.preventDefault();
