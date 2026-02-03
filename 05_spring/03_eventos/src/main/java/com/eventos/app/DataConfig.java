@@ -30,8 +30,8 @@ return dataSource;
 
     adapter.setDatabase(Database.MYSQL);
     adapter.setShowSql(true);
-    adapter.setGenerateDdl(true);
-    adapter.setDatabasePlatform("org,hibernate.dialect.MySQL8Dialect");
+    adapter.setGenerateDdl(true); 
+    //adapter.setDatabasePlatform("org,hibernate.dialect.MySQL8Dialect");
     adapter.setPrepareConnection(true);
 
     return adapter;
