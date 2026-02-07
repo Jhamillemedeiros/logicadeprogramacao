@@ -25,12 +25,12 @@
 
         <div class="col-md-4 mb-4" th:each="evento : ${eventos}">
 
-          <div class="card h-100" style="background-image: url('https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/a-construcao-de-brasilia.jpg');
+          <div class="card h-100" style="background-image: url('https://img.freepik.com/fotos-gratis/renderizacao-3d-do-fundo-de-textura-hexagonal_23-2150796421.jpg?semt=ais_hybrid&w=740&q=80');
                     background-size: cover;
                     background-position: center;">
 
 
-            <div class="card-body" style="background: rgba(129, 116, 116, 0.4); color: white;">
+            <div class="card-body" style="background: rgba(13, 10, 10, 0.4); color: rgb(205, 64, 25);">
 
               <h5 class="card-title" th:text="${evento.nome}"></h5>
 
@@ -50,7 +50,7 @@
               </div>
 
               <a th:href="@{/editarEvento/{id}(id=${evento.idEvento})}" class="card-link">Editar</a>
-              <a href="#" class="card-link">Excluir</a>
+              <a th:href="@{/confirmarExclusao/{id}(id=${evento.idEvento})}" class="card-link">Excluir</a>
 
             </div>
           </div>
